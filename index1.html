@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>CMS-GoodShop</title>
     <link rel="stylesheet" href="css/normalize.css" >
@@ -43,7 +43,7 @@
               </label>
             </div>
             <div class="form__field form__field--sale">
-              <label for="sale-checkbox" class="form__label form__label--sale">
+              <label for="sale-checkbox " class="form__label">
                 Дисконт
                 <input
                   type="checkbox"
@@ -51,9 +51,9 @@
                   checked
                   class="form__field--sale-checkbox"
                   id="sale-checkbox"
-                >
+                />
+                <input type="text" name="text" class="form__field--sale-text" >
               </label>
-              <input type="text" name="text" class=" form__input form__field--sale-text" >
             </div>
             <div class="form__field form__field--description">
               <label class="form__label">
@@ -87,8 +87,8 @@
                   type="file"
                   name="image"
                   accept=".jpg, .png, .gif, .svg"
-
-                >
+                  value="Добавить изображение"
+                />
               </label>
             </div>
           </fieldset>
@@ -117,7 +117,7 @@
             type="search"
             class="actions__search"
             placeholder="Поиск по наименованию и категории"
-          >
+          />
           <button class="btn">Добавить товар</button>
         </div>
         <div class="table__wrapper">
@@ -342,8 +342,9 @@
                     <span class="table__buttons--right"> </span>
                   </div>
                 </td>
-                <!-- <td class="table__cell"></td> -->
-                <!-- <td class="table__cell"></td> -->
+                <td class="table__cell"></td>
+                <td class="table__cell"></td>
+                <td class="table__cell"></td>
               </tr>
             </tfoot>
           </table>
